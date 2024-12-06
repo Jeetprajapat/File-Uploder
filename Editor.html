@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Editor.css">
+</head>
+
+<body>
+    <div class="wrapper">   
+        <div class="box">
+            <div class="input-box">
+                <h1 class="upload-area">Upload File</h1>
+                <form action="">
+                    <input type="file" id="upload" accept=".doc,.docx,.pdf" hidden>
+                    <label for="upload" class="uploadlabel">
+                        <span><i class="fa fa-cloud-upload"></i></span>
+                        <p>Click to upload</p>
+                    </label>
+                    <input type="file" id="download" accept=".doc,.docx,.pdf" hidden>
+                </form>
+            </div>
+            <div id="filewrapper">
+                <h3 class="uploaded">Uploaded Documents</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="Editor.js"></script>
+</body>
+
+</html>
